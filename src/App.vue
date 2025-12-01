@@ -1,11 +1,13 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <el-button type="primary" size="default" :icon="Check">主按钮</el-button>
+  <el-button type="success" size="default" :icon="Edit">成功按钮</el-button>
+
+
 </template>
+
+<script setup lang="ts">
+import { Check, Edit } from '@element-plus/icons-vue';
+
+</script>
 
 <style scoped></style>
