@@ -1,0 +1,13 @@
+// 引入重置样式
+@import './reset.scss';
+
+// 引入 Element Plus 的样式覆盖（如果有的话）
+// @import './element-override.scss';
+
+// 定义一些全局通用的类
+.w-100 {
+  width: 100%;
+}
+.mt-20 {
+  margin-top: 20px;
+}

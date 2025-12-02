@@ -1,0 +1,47 @@
+/* src/styles/reset.scss */
+
+/* 1. 没有任何边距，所有标签全部归零 */
+* {
+  margin: 0;
+  padding: 0;
+  /* 🌟 核心：改变盒子模型的计算方式 */
+  /* border-box 让 padding 和 border 不会撑大盒子，这符合人类直觉，布局必备！ */
+  box-sizing: border-box;
+}
+
+/* 2. 让 html 和 body 占满全屏 */
+html,
+body,
+#app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* 防止出现双滚动条 */
+}
+
+/* 3. 统一字体 */
+body {
+  font-family:
+    'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  font-size: 14px; /* 后台系统常用字号 */
+  color: #333; /* 通用字体颜色 */
+  background-color: #f5f7fa; /* 通用背景色 */
+  -webkit-font-smoothing: antialiased; /* 让字体更清晰 */
+}
+
+/* 4. 去掉列表前面的黑点 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 5. 去掉链接的下划线 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. 图片自适应 */
+img {
+  display: block;
+  max-width: 100%;
+}

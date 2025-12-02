@@ -7,6 +7,12 @@ import App from './App.vue'
 import router from './router'
 import { zhCn } from 'element-plus/es/locales.mjs'
 
+//引入 svg 图标注册脚本
+import 'virtual:svg-icons-register'
+
+//引入全局样式入口
+import '@/styles/index.scss'
+
 const app = createApp(App)
 
 app.use(createPinia())
