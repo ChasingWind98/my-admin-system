@@ -17,8 +17,12 @@ export interface LoginParams {
 }
 // 登录结果
 export interface LoginResult {
-  token: string
-  expiresIn: number
+  code: number
+  message: string
+  data?: {
+    token: string
+    expiresIn?: number
+  }
 }
 // 用户信息
 export interface UserInfo {
@@ -28,8 +32,8 @@ export interface UserInfo {
 }
 //3. 接口函数导出
 //登录接口
-export const login = (params: LoginParams) => {
-  return request.post<LoginResult>(API.LOGIN, params)
+export const loginApi = (params: LoginParams) => {
+  return request.post<LoginResult, LoginResult>(API.LOGIN, params)
 }
 
 //获取用户信息接口
